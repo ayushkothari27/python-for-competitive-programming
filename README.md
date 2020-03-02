@@ -31,6 +31,7 @@ Replace all occurance of char by other in a string - ```string.replace(old_char,
 Replace one occurance of char by other in a string - ```string.replace(old_char,new_char, 1)``` <br>
 Split - ``` string.split(delimiter) ``` <br>
 Find index of a char in string - ``` string.find(char) (-1 means char not found) ``` <br>
+Count 
 
 ### List/Array functions 
 Maximum number in array - ```max(array)```  <br>
@@ -45,12 +46,17 @@ Reverse - ``` list.reverse() ``` <br>
 Find index of a element in list - ``` list.index(element)  ``` <br>
 Delete element at a certain index - ``` del list[index] ``` <br>
 Insert an element at a particular index - ``` list.insert(index,element) ``` <br>
+Remove element at particular index - ``` array.pop(index)  ``` <br>
+Remove a particular element - ``` array.remove(element)  ``` <br>
 
 ### Dictionary functions 
 Initialize - ```dict = {}``` <br>
 Assign - ``` dict[key] = value ``` <br>
 Check if key already exists - ``` if key in dict ``` <br>
-
+Get value from a key ``` dict[key] ``` <br>
+List of keys - ``` list(dict.keys()) ``` <br>
+List of values - ``` list(dict.values()) ``` <br>
+Remove a particular key - ```dict.pop(key) ``` <br>
 
 ### Set functions 
 Initialize - ``` x = set()  ``` <br>
