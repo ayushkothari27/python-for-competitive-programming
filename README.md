@@ -33,7 +33,7 @@ Reverse - ``` string[::-1] ``` <br>
 
 Replace all occurance of char by other in a string - ```string.replace(old_char,new_char)``` <br>
 ``` ''.join('new_char if c == old_char else c for c in string)``` <br>
-``` 'new_char.join(address.split(old_char)) ```
+``` new_char.join(address.split(old_char)) ```
 
 Replace one occurance of char by other in a string - ```string.replace(old_char,new_char, 1)``` <br>
 
@@ -96,6 +96,13 @@ Add into a set - ``` set.add(element) ``` <br>
 
 Check if element already exists - ``` if ele in set ``` <br>
 
+### ASCII
+
+Int val from char - ```ord(char)``` <br>
+
+Char val from int - ```chr(int)``` <br>
+
+
 ### No of digits in a number
 
 ```log10(n) + 1``` <br>
@@ -106,5 +113,8 @@ get_bin = lambda x, n: format(x, 'b').zfill(n)
 binary_x = get_bin(number,length)
 ```
 
+### Tips
+
+1. If you want to sort an array seperating even and odd numbers we can use quick sort with time O(N) and space O(1). <br>
 
 
