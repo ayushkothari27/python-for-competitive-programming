@@ -124,9 +124,64 @@ while x:
 return y
 ```
 
-
 ### Tips
 
 1. If you want to sort an array seperating even and odd numbers we can use quick sort with time O(N) and space O(1). <br>
 
+2.  Pascal triangle row can be constructed using the offset sum of the previous row
 
+3. Xor of the same number is zero
+
+4. Binary search can be used to find maximum index when array is in the form of a mountain. Also Golden-section search can be used.
+
+5. 
+
+
+### Useful codes
+
+Merge sort 
+```
+def merge(self, arr, l, m, r): 
+    n1 = m - l + 1
+    n2 = r- m 
+
+    L = [0] * (n1) 
+    R = [0] * (n2) 
+
+    for i in range(0 , n1): 
+        L[i] = arr[l + i] 
+
+    for j in range(0 , n2): 
+        R[j] = arr[m + 1 + j] 
+
+    i = 0   
+    j = 0   
+    k = l 
+
+    while i < n1 and j < n2 : 
+        if L[i] <= R[j]: 
+            arr[k] = L[i] 
+            i += 1
+        else: 
+            arr[k] = R[j] 
+            j += 1
+        k += 1
+
+    while i < n1: 
+        arr[k] = L[i] 
+        i += 1
+        k += 1
+
+    while j < n2: 
+        arr[k] = R[j] 
+        j += 1
+        k += 1
+
+def mergeSort(self,arr,l,r): 
+    if l < r: 
+        m = (l+(r-1))/2
+        self.mergeSort(arr, l, m) 
+        self.mergeSort(arr, m+1, r) 
+        self.merge(arr, l, m, r) 
+
+```
