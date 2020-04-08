@@ -113,6 +113,17 @@ get_bin = lambda x, n: format(x, 'b').zfill(n)
 binary_x = get_bin(number,length)
 ```
 
+### Hamming distance
+```bin(x^y).count('1')```  <br>
+``` 
+x = x ^ y
+y = 0
+while x:
+    y += 1
+    x = x & (x - 1)
+return y```
+
+
 ### Tips
 
 1. If you want to sort an array seperating even and odd numbers we can use quick sort with time O(N) and space O(1). <br>
