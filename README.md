@@ -134,7 +134,7 @@ return y
 
 4. Binary search can be used to find maximum index when array is in the form of a mountain. Also Golden-section search can be used.
 
-5. 
+5. Tortoise and hare algorithm can be used for cycle detection.
 
 
 ### Useful codes
