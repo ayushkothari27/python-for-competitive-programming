@@ -132,6 +132,18 @@ while x:
 return y
 ```
 
+### No of 1's bit in a integer
+```
+def countSetBits(n): 
+  
+        count = 0
+        while (n): 
+            n &= (n-1)  
+            count+= 1
+
+        return count 
+```
+
 ### Tips
 
 1. If you want to sort an array seperating even and odd numbers we can use quick sort with time O(N) and space O(1). <br>
