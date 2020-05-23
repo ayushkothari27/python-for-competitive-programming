@@ -148,4 +148,6 @@ return y
 
 7. Kadane’s algorithm is to look for all positive contiguous segments of the array.
 
+8. Sieve of Eratosthenes is used to find all prime numbers upto a certain n.
+
 
