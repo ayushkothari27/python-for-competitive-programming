@@ -146,6 +146,6 @@ return y
 
 6. Inorder traversal of BST is a list of sorted numbers.
 
-7. 
+7. Kadane’s algorithm is to look for all positive contiguous segments of the array.
 
 
