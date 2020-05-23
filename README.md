@@ -41,7 +41,6 @@ Split - ``` string.split(delimiter) ``` <br>
 
 Find index of a char in string - ``` string.find(char) (-1 means char not found) ``` <br>
 
-Count 
 
 ### List/Array functions 
 
@@ -88,6 +87,15 @@ List of values - ``` list(dict.values()) ``` <br>
 
 Remove a particular key - ```dict.pop(key) ``` <br>
 
+Sort based on key - ``` sorted(hash_map.items(), key=lambda item: item[0]) ``` <br>
+
+Sort based on value - ``` sorted(hash_map.items(), key=lambda item: item[1]) ``` <br>
+
+Sort based on first key and the value - ``` sorted(hash_map.items(), key=lambda item:(item[0],item[1])) ``` <br>
+
+Reverse sort - ``` sorted(hash_map.items(), key=lambda item: item[0],reverse=True) ``` <br>
+
+
 ### Set functions 
 
 Initialize - ``` x = set()  ``` <br>
@@ -128,7 +136,7 @@ return y
 
 1. If you want to sort an array seperating even and odd numbers we can use quick sort with time O(N) and space O(1). <br>
 
-2.  Pascal triangle row can be constructed using the offset sum of the previous row
+2. Pascal triangle row can be constructed using the offset sum of the previous row
 
 3. Xor of the same number is zero
 
@@ -136,77 +144,8 @@ return y
 
 5. Tortoise and hare algorithm can be used for cycle detection.
 
+6. Inorder traversal of BST is a list of sorted numbers.
 
-### Useful codes
+7. 
 
-Merge sort 
-```
-def merge(self, arr, l, m, r): 
-    n1 = m - l + 1
-    n2 = r- m 
-
-    L = [0] * (n1) 
-    R = [0] * (n2) 
-
-    for i in range(0 , n1): 
-        L[i] = arr[l + i] 
-
-    for j in range(0 , n2): 
-        R[j] = arr[m + 1 + j] 
-
-    i = 0   
-    j = 0   
-    k = l 
-
-    while i < n1 and j < n2 : 
-        if L[i] <= R[j]: 
-            arr[k] = L[i] 
-            i += 1
-        else: 
-            arr[k] = R[j] 
-            j += 1
-        k += 1
-
-    while i < n1: 
-        arr[k] = L[i] 
-        i += 1
-        k += 1
-
-    while j < n2: 
-        arr[k] = R[j] 
-        j += 1
-        k += 1
-
-def mergeSort(self,arr,l,r): 
-    if l < r: 
-        m = (l+(r-1))/2
-        self.mergeSort(arr, l, m) 
-        self.mergeSort(arr, m+1, r) 
-        self.merge(arr, l, m, r) 
-
-```
-
-Quick sort
-
-```
-def partition(self,arr,low,high): 
-    i = ( low-1 )         
-    pivot = arr[high]   
-
-    for j in range(low , high): 
-        if   arr[j] <= pivot:
-            i = i+1 
-            arr[i],arr[j] = arr[j],arr[i] 
-
-    arr[i+1],arr[high] = arr[high],arr[i+1] 
-    return ( i+1 ) 
-
-def quickSort(self,arr,low,high): 
-    if low < high: 
-        pi = self.partition(arr,low,high) 
-        self.quickSort(arr, low, pi-1) 
-        self.quickSort(arr, pi+1, high) 
-
-    return arr
-```
 
