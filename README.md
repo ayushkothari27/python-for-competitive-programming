@@ -162,5 +162,7 @@ def countSetBits(n):
 
 8. Sieve of Eratosthenes is used to find all prime numbers upto a certain n.
 
-9. Problems like Bulb switcher (https://leetcode.com/problems/bulb-switcher/) we just need to find number of perfect squares ie the numbers where the total number of divisors are odd.
+9. Problems like Bulb switcher (https://leetcode.com/problems/bulb-switcher/), we just need to find number of perfect squares ie the numbers where the total number of divisors are odd.
+
+10. The Boyer–Moore majority vote algorithm is an algorithm for finding the majority of a sequence of elements using linear time and constant space.
 
