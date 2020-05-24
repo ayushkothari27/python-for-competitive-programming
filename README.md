@@ -166,3 +166,16 @@ def countSetBits(n):
 
 10. The Boyer–Moore majority vote algorithm is an algorithm for finding the majority of a sequence of elements using linear time and constant space.
 
+11. No need to reverse the whole number when comparing palindromes (Ofc when converting to string is not allowed in the question :p)
+```
+x - given number
+y = 0
+while x > y:
+    y *= 10
+    y += x % 10
+    x //= 10
+return x == y or x == y // 10 
+```
+
+12.
+
