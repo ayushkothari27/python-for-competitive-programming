@@ -144,6 +144,15 @@ def countSetBits(n):
         return count 
 ```
 
+### Complement of a number using bit manipulation
+```
+def findComplement(num):
+        i = 1
+        while i <= num:
+            i = i << 1
+        return (i - 1) ^ num
+```
+
 ### Tips
 
 1. If you want to sort an array seperating even and odd numbers we can use quick sort with time O(N) and space O(1). <br>
