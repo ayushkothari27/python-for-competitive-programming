@@ -1,5 +1,5 @@
 # python-for-competitive-programming
-This repo was created just for self revision. There might be cases where some codes may not be optimal.
+This repo was created just for self revision. There might be cases where some codes may not be optimal. I will add more cases when I encounter new ways to solve.
 
 <br>
 
@@ -185,6 +185,4 @@ while x > y:
     x //= 10
 return x == y or x == y // 10 
 ```
-
-12.
 
